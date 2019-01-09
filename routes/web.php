@@ -22,3 +22,5 @@ Route::get('{provider}/callback', 'AuthSocialController@callback')->where('provi
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact',  'ContactController@mailToAdmin');
